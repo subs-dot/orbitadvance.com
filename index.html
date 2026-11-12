@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <noscript><style>.planner__inputs,.planner__js{display:none!important}.planner__nojs{display:block!important}.menu-btn{display:none!important}.header__cta .btn{display:inline-flex!important}.board__scale{display:grid!important}</style></noscript>
+  <noscript><style>.planner__inputs,.planner__js{display:none!important}.planner__nojs{display:block!important}.menu-btn{display:none!important}.header__cta .btn{display:inline-flex!important}.board__scale{display:grid!important}@media (max-width:1000px){.header__inner{flex-wrap:wrap}.nav{position:static!important;display:flex!important;flex-direction:row!important;flex-wrap:wrap;order:3;flex-basis:100%;gap:0 20px!important;margin:0!important;padding:0 0 8px!important;border:0!important;background:none!important;max-height:none!important;overflow:visible!important}.nav a{padding:6px 0!important;border:0!important}.nav__contact{display:none!important}}</style></noscript>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FinancialService","name":"Orbit Advance","legalName":"Orbit Advance LLC","url":"https://orbitadvance.com/","email":"admin@orbitadvance.com","description":"Merchant cash advances, lines of credit, term loans and SBA loans from $10,000 to $3,000,000 for U.S. small businesses.","areaServed":"US"}
   </script>
@@ -123,7 +123,7 @@
             <circle cx="320" cy="320" r="110"/><circle cx="320" cy="320" r="155"/>
             <circle cx="320" cy="320" r="200"/><circle cx="320" cy="320" r="245"/>
           </g>
-          <!-- time to funds: solid up to the soonest it typically lands, stripes across the usual range -->
+          <!-- time to funds: solid up to the fastest typical time, stripes across the usual range -->
           <g class="dial__arcs" transform="rotate(-90 320 320)">
             <g class="rng" stroke-dasharray="23.5 336.5" stroke-dashoffset="-31.5"><circle cx="320" cy="320" r="106" pathLength="360"/><circle cx="320" cy="320" r="110" pathLength="360"/><circle cx="320" cy="320" r="114" pathLength="360"/></g>
             <circle class="sol" cx="320" cy="320" r="110" pathLength="360" stroke-dasharray="30 330"/>
@@ -156,7 +156,7 @@
         </svg>
         <div class="hero__caption">
           <p>Closer in is faster. Further out takes longer and usually costs less.</p>
-          <ul class="key" aria-hidden="true"><li class="key__solid">Soonest it typically lands</li><li class="key__range">Usual range</li><li class="key__plain">Not to scale</li></ul>
+          <ul class="key" aria-hidden="true"><li class="key__solid">Fastest typical time</li><li class="key__range">Usual range</li><li class="key__plain">Not to scale</li></ul>
         </div>
       </div>
 
@@ -262,7 +262,7 @@
                 <li class="legend__in">In range</li>
                 <li class="legend__tight">Possible, but tight</li>
                 <li class="legend__out">Out of range</li>
-                <li class="legend__solid">Soonest it typically lands</li>
+                <li class="legend__solid">Fastest typical time</li>
                 <li class="legend__range">Usual range</li>
               </ul>
               <p class="planner__hint">Programs further out take longer, and usually cost less.</p>
@@ -285,6 +285,7 @@
         <h2>Four orbits, from fastest to most patient.</h2>
         <p class="section__lede">Every program trades speed against cost. Here's what each one is, how long it takes, and who it suits.</p>
       </div>
+      <ul class="key key--bars" aria-hidden="true"><li class="key__solid">Fastest typical time</li><li class="key__range">Usual range</li><li class="key__plain">Scale: 48 h, 1 wk, 1 mo, 3 mo</li></ul>
 
       <div class="orbits">
         <article class="orbit" id="prog-mca" data-program="mca" data-state="in" style="--fast:12.5%;--slow:25%">
@@ -411,7 +412,8 @@
         <h2>Speed, cost and paperwork, compared.</h2>
         <p class="section__lede">No program wins on everything. This is where each one lands.</p>
       </div>
-      <div class="table-wrap" tabindex="0" role="region" aria-label="Program comparison table">
+      <ul class="key key--bars" aria-hidden="true"><li class="key__solid">Fastest typical time</li><li class="key__range">Usual range</li><li class="key__plain">Scale: 48 h, 1 wk, 1 mo, 3 mo</li></ul>
+      <div class="table-wrap">
         <table class="compare" role="table">
           <thead role="rowgroup">
             <tr role="row"><th scope="col" role="columnheader"><span class="sr-only">Feature</span></th><th scope="col" role="columnheader"><small><b aria-hidden="true">1</b>Orbit 1</small> Merchant cash advance</th><th scope="col" role="columnheader"><small><b aria-hidden="true">2</b>Orbit 2</small> Line of credit</th><th scope="col" role="columnheader"><small><b aria-hidden="true">3</b>Orbit 3</small> Term loan</th><th scope="col" role="columnheader"><small><b aria-hidden="true">4</b>Orbit 4</small> SBA loan</th></tr>
